@@ -1,0 +1,22 @@
+[
+    {
+        "questao": "perguntaExemplo1",
+        "valor": 12000,
+        "img_src": "./amazon_logo._CB635397845_.png"
+    },
+    {
+        "questao": "perguntaExemplo2",
+        "valor": 125616,
+        "img_src": "https://picsum.photos/1000/800?image=1069"
+    },
+    {
+        "questao": "perguntaExemplo3",
+        "valor": 634784,
+        "img_src": ""
+    },
+    {
+        "questao": "perguntaExemplo4",
+        "valor": 734634,
+        "img_src": ""
+    }
+]

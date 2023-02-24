@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    backdrop-filter: brightness(60%);
+    margin: 0;
+    height: 100vh;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50% 100%;
+    background-position: left top, right top;
+    flex-direction: column; 
+    overflow: hidden;
+   }
+
+.options {
+    height: 90vh;
+    display: flex;
+}
+
+.option-container {
+    height: 90vh;
+    width: 50vw;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.pontuacoes {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pontuacoes > * {
+    color: #fff;
+    font-size: 3.5vh;
+    margin: 0 35px;
+}
+
+.option-text {
+    color: #fff;
+    font-size: 6vh;
+}
+
+.option-value {
+    color: #fff989;
+    font-size: 4vh;
+    margin: auto;
+}
+
+.option-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.botao-selecao {
+    border: 0.125rem solid #fff;
+    padding: 0.625rem;
+    border-radius: 2.5rem;
+    border-radius: 50px;
+    background: transparent;
+    font-size: 4vh;
+    color: #fff989;
+    margin: 5px;
+    transition: background-color 0.5s ease;
+}
+
+.botao-selecao:hover {
+    background-color: #fff;
+    color: black;
+}
