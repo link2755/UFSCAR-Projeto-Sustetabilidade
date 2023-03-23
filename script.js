@@ -29,7 +29,7 @@ function shuffle(array) {
 
 function loadQuestion() {
     if (iterador + 1 < dados.length) {
-        document.getElementById('pontuacao_atual').innerHTML = 'Pontuação Atual: ' + iterador;
+        document.getElementById('pontuacao_atual').innerHTML = iterador;
         document.getElementById('opt1').innerHTML = dados[iterador].questao;
         document.getElementById('opt1_value').innerHTML = dados[iterador].valor;
         
@@ -57,6 +57,11 @@ function finalizarJogo() {
     if (localStorage['pontuacaoMax'] && localStorage['pontuacaoMax'] > iterador) {
         localStorage['pontuacaoMax'] = iterador;
     }
+    if (iterador) {
+        localStorage['pontuacaoAtual'] = iterador;
+    }
+    //salvando atual pra exibir ta tela de pontuação final
+    window.location.replace("pagina_final.html");
     return;
 }
 
@@ -75,6 +80,8 @@ function iniciarQuiz() {
     if(!localStorage['pontuacaoMax']) {
         localStorage['pontuacaoMax'] = 0;
     }
+    localStorage['pontuacaoAtual'] = 0;
+
     var max = localStorage['pontuacaoMax']
     document.getElementById('pontuacao_maxima').innerHTML = 'Pontuação Máxima: ' + max;
 

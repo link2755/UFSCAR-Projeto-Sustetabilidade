@@ -74,3 +74,38 @@ body {
     background-color: #fff;
     color: black;
 }
+
+#pontuacao_atual {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
+    color: #fff989;
+    background-color: black;
+    width: 6vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.pontuacao_final {
+    background: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pontuacao_final > * {
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: white;
+    font-size: 3.5vh;
+}
+
+#pontos_amarelo {
+    color: #fff989;
+}
